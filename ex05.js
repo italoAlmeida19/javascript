@@ -1,6 +1,6 @@
 const pessoa = {
-    nome: "Fulano",
-    idade: 18,
+  nome: "Fulano",
+  idade: 18,
 };
 
 console.table(pessoa);
