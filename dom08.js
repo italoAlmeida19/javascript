@@ -19,7 +19,7 @@ eParButton.addEventListener("click", function(event){
     criaElemento(eParList)
 });
 
-eImparButton.addEventListener("click", function(event) {
+eImparButton.addEventListener("click", event => {
     console.log("eh impar!")
     criaElemento(eImparList);
 });
