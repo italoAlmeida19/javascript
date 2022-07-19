@@ -1,6 +1,6 @@
 function criaElemento(cor, largura, altura) {
   const eNovo = document.createElement("div");
-  eNovo.textContent = `${cor} ${altura} ${largura}`;
+  eNovo.textContent = `${cor} ${altura} ${largura} ${altura+largura}`;
   document.body.appendChild(eNovo);
 }
 
@@ -11,8 +11,8 @@ function submitListener(event) {
 
   criaElemento(
     document.exm01.cor.value,
-    document.exm01.largura.value,
-    document.exm01.altura.value
+    Number(document.exm01.largura.value),
+    Number(document.exm01.altura.value)
   );
 
   document.exm01.reset();
