@@ -1,6 +1,7 @@
 function criaElemento(cor, largura, altura) {
   const eNovo = document.createElement("div");
   eNovo.textContent = `${cor} ${altura} ${largura} ${altura+largura}`;
+  eNovo.style = `color: ${cor};`
   document.body.appendChild(eNovo);
 }
 
